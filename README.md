@@ -14,14 +14,15 @@
 | **Name** | Arham Jain |
 | **Registration Number** | 24BAI10583 |
 | **University** | VIT Bhopal University |
-| **Course** | Open Source Software (NGMC) |
-| **Semester** | B.Tech 2nd Semester (Winter 2026) |
+| **Course** | Open Source Software (LINUX ADMINISTRATION) |
+| **Faculty** | RAJIT NAIR |
+| **Semester** | B.Tech 5th Semester (Winter Semester 2025-26) |
 
 ---
 
 ## 📖 Project Description
 
-This is my capstone project for the Open Source Software course at VIT Bhopal University. I chose **Git** as my focus software — the world's most widely used distributed version control system, created by Linus Torvalds in April 2005 and licensed under the GNU General Public License v2 (GPL v2).
+This is my capstone project for the Open Source Software(LINUX ADMINISTRATION) course at VIT Bhopal University. I chose **Git** as my focus software — the world's most widely used distributed version control system, created by Linus Torvalds in April 2005 and licensed under the GNU General Public License v2 (GPL v2).
 
 The project covers the origin story and philosophy of Git (including the dramatic BitKeeper incident that led to its creation), its Linux footprint, the broader FOSS ecosystem it belongs to, and a detailed comparison with proprietary version control alternatives. It also includes five practical bash scripts that demonstrate key Linux concepts from Units 1–5.
 

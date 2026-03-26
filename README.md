@@ -3,7 +3,7 @@
 ![Bash](https://img.shields.io/badge/Language-Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Linux-FCC624?style=flat&logo=linux&logoColor=black)
 ![License](https://img.shields.io/badge/License-GPL_v2-red?style=flat)
-![Course](https://img.shields.io/badge/Course-Open_Source_Software-teal?style=flat)
+![Course](https://img.shields.io/badge/Course-Open_Source_Software_LINUX ADMINISTRATION-teal?style=flat)
 
 ---
 

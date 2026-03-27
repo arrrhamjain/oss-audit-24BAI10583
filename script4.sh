@@ -6,7 +6,7 @@
 #              occurrences, and prints a summary with last 5 matches
 # Usage: ./script4.sh [logfile] [keyword]
 
-# Accept log file and keyword from command line arguments
+# --- Accept log file and keyword from command line arguments ---
 LOGFILE=${1:-"/var/log/dpkg.log"}   # Default log file
 KEYWORD=${2:-"error"}               # Default keyword is 'error'
 COUNT=0                             # Counter variable
@@ -19,7 +19,7 @@ echo "  Log File : $LOGFILE"
 echo "  Keyword  : $KEYWORD"
 echo ""
 
-# Check if log file exists
+# --- Check if log file exists ---
 if [ ! -f "$LOGFILE" ]; then
     echo "  [!] File '$LOGFILE' not found."
     echo "      Creating a sample log file for demonstration..."
@@ -47,7 +47,7 @@ fi
 echo "  Scanning file for keyword: '$KEYWORD'"
 echo "----------------------------------------"
 
-# While loop to read file line by line
+# --- While loop to read file line by line ---
 while IFS= read -r LINE; do
     # If line contains the keyword (case insensitive), count it
     if echo "$LINE" | grep -iq "$KEYWORD"; then
@@ -55,12 +55,12 @@ while IFS= read -r LINE; do
     fi
 done < "$LOGFILE"
 
-# Print summary
+# --- Print summary ---
 echo ""
 echo "  Result: Keyword '$KEYWORD' found $COUNT time(s)"
 echo ""
 
-# Print last 5 matching lines
+# --- Print last 5 matching lines ---
 echo "  Last 5 matching lines:"
 echo "  ----------------------"
 grep -i "$KEYWORD" "$LOGFILE" | tail -5 | while read -r MATCH; do

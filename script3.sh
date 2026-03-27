@@ -5,7 +5,7 @@
 # Description: Loops through system directories and reports
 #              permissions, ownership, and disk usage
 
-# List of important system directories to audit
+# --- List of important system directories to audit ---
 DIRS=("/etc" "/var/log" "/home" "/usr/bin" "/tmp")
 
 echo "========================================"
@@ -17,7 +17,7 @@ echo ""
 printf "  %-15s %-25s %-10s\n" "Directory" "Permissions/Owner" "Size"
 echo "  -------------------------------------------------------"
 
-# For loop to go through each directory
+# --- For loop to go through each directory ---
 for DIR in "${DIRS[@]}"; do
     if [ -d "$DIR" ]; then
         # Extract permissions and owner using ls and awk
@@ -36,7 +36,7 @@ echo "----------------------------------------"
 echo "  Checking Git config directory..."
 echo "----------------------------------------"
 
-# Check if Git's config directory/file exists
+# --- Check if Git's config directory/file exists ---
 GIT_CONFIG="/etc/gitconfig"
 GIT_USER_CONFIG="$HOME/.gitconfig"
 

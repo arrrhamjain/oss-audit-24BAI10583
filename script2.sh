@@ -5,7 +5,7 @@
 # Description: Checks if Git is installed, shows its details,
 #              and prints a philosophy note using a case statement
 
-# Set the package to inspect
+# --- Set the package to inspect ---
 PACKAGE="git"
 
 echo "========================================"
@@ -14,20 +14,20 @@ echo "   Checking package: $PACKAGE"
 echo "========================================"
 echo ""
 
-# Check if package is installed using if-then-else
+# --- Check if package is installed using if-then-else ---
 if command -v $PACKAGE &>/dev/null; then
     echo "[+] $PACKAGE is INSTALLED on this system."
     echo ""
 
-    # Get version info
+    # --- Get version info ---
     VERSION=$(git --version)
     echo "  Version   : $VERSION"
 
-    # Get install location
+    # --- Get install location ---
     LOCATION=$(which git)
     echo "  Location  : $LOCATION"
 
-    # Get package details if dpkg is available
+    # --- Get package details if dpkg is available ---
     if command -v dpkg &>/dev/null; then
         echo ""
         echo "  Package details (dpkg):"
@@ -44,7 +44,7 @@ echo "----------------------------------------"
 echo "  Philosophy Note:"
 echo "----------------------------------------"
 
-# Case statement to print philosophy based on package name
+# --- Case statement to print philosophy based on package name ---
 case $PACKAGE in
     git)
         echo "  Git: Born out of frustration with proprietary"

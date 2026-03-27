@@ -6,7 +6,7 @@
 #              generates a personalised open source manifesto
 #              saved to a .txt file
 
-# alias concept demonstrated
+# --- alias concept demonstrated ---
 # In a real shell session you could use: alias today='date +%d-%B-%Y'
 # Here we use a variable to achieve the same result
 DATE=$(date '+%d %B %Y')
@@ -21,7 +21,7 @@ echo "  Answer three questions to generate"
 echo "  your personal open source manifesto."
 echo ""
 
-# Read user input interactively
+# --- Read user input interactively ---
 read -p "  1. Name one open-source tool you use every day: " TOOL
 read -p "  2. In one word, what does 'freedom' mean to you? " FREEDOM
 read -p "  3. Name one thing you would build and share freely: " BUILD
@@ -30,7 +30,7 @@ echo ""
 echo "  Generating your manifesto..."
 echo ""
 
-# Compose manifesto and write to file using > and >>
+# --- Compose manifesto and write to file using > and >> ---
 echo "================================================" > "$OUTPUT"
 echo "        MY OPEN SOURCE MANIFESTO" >> "$OUTPUT"
 echo "        Arham Jain | 24BAI10583" >> "$OUTPUT"
@@ -58,7 +58,7 @@ echo "Signed: Arham Jain" >> "$OUTPUT"
 echo "Date  : $DATE" >> "$OUTPUT"
 echo "================================================" >> "$OUTPUT"
 
-# Display the manifesto
+# --- Display the manifesto ---
 echo "  ✓ Manifesto saved to: $OUTPUT"
 echo ""
 cat "$OUTPUT"

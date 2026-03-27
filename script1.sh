@@ -4,26 +4,26 @@
 # Course: Open Source Software
 # Description: Displays system information like a welcome screen
 
-# --- Variables ---
+# Variables
 STUDENT_NAME="Arham Jain"
 ROLL_NO="24BAI10583"
 SOFTWARE_CHOICE="Git"
 
-# --- Gather system info using command substitution ---
+# Gather system info using command substitution
 KERNEL=$(uname -r)
 USER_NAME=$(id -un)
 UPTIME=$(uptime -p)
 DATE=$(date '+%d %B %Y, %I:%M %p')
 HOME_DIR=$HOME
 
-# --- Get distro name safely ---
+# Get distro name safely
 if [ -f /etc/os-release ]; then
     DISTRO=$(grep PRETTY_NAME /etc/os-release | cut -d= -f2 | tr -d '"')
 else
     DISTRO="Linux (distro info unavailable)"
 fi
 
-# --- Display welcome screen ---
+# Display welcome screen
 echo "========================================"
 echo "   Open Source Audit — $STUDENT_NAME"
 echo "   Roll Number    : $ROLL_NO"
